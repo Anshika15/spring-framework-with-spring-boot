@@ -7,6 +7,10 @@
 
     <!-- bean definitions here -->
     
-    <bean id="alien" class="com.practice.SpringDemo.Alien" scope="prototype"></bean>
+    <bean id="alien" class="com.practice.SpringDemo.Alien">
+    	<property name="age" value="10"></property>
+    	<property name="laptop" ref="laptop"></property>
+    </bean>
 
+	<bean id="laptop" class="com.practice.SpringDemo.Laptop"></bean>
 </beans>
