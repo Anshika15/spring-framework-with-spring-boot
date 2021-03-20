@@ -7,6 +7,6 @@
 
     <!-- bean definitions here -->
     
-    <bean id="alien" class="com.practice.SpringDemo.Alien"></bean>
+    <bean id="alien" class="com.practice.SpringDemo.Alien" scope="prototype"></bean>
 
 </beans>

@@ -1,7 +1,7 @@
 package com.practice.SpringDemo;
 
 public class Alien {
-	 int age;
+	int age = 10;
 	
 	public Alien() {
 		System.out.println("object created");
