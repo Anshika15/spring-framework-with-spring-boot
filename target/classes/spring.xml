@@ -8,7 +8,7 @@
     <!-- bean definitions here -->
     
     <bean id="alien" class="com.practice.SpringDemo.Alien">
-    	<property name="age" value="10"></property>
+    	<constructor-arg value="12"></constructor-arg>
     	<property name="laptop" ref="laptop"></property>
     </bean>
 

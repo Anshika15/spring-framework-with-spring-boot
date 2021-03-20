@@ -4,8 +4,8 @@ public class Alien {
 	private int age;
 	private Laptop laptop;
 	
-	public Alien() {
-		System.out.println("object created");
+	public Alien(int age) {
+		this.age = age;
 	}
 	
 	public void code() {
