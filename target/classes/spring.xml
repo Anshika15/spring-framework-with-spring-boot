@@ -7,10 +7,18 @@
 
     <!-- bean definitions here -->
     
-    <bean id="alien" class="com.practice.SpringDemo.Alien">
+   <!-- <bean id="alien" class="com.practice.SpringDemo.Alien" autowire="byName"> --><!-- autowire byName checks for id=com same as that of property name -->
+     <bean id="alien" class="com.practice.SpringDemo.Alien" autowire="byType">
     	<constructor-arg value="12"></constructor-arg>
-    	<property name="laptop" ref="laptop"></property>
+    	
     </bean>
 
-	<bean id="laptop" class="com.practice.SpringDemo.Laptop"></bean>
+	<!-- <bean id="com" class="com.practice.SpringDemo.Laptop"></bean> --><!--  autowire byName will refer to the laptop -->
+	<!--  <bean id="desktop" class="com.practice.SpringDemo.Desktop"></bean> --><!-- autowire byType will check if we have a object for same time in case we have a object for desktop as laptop is commented -->
+	
+	<!-- In case of autowire byType spring will get confused if we define both the beans and throw errors, therefore we  need to give preferemce t one and that can be done by primary attribute-->
+	
+	<bean id="laptop" class="com.practice.SpringDemo.Laptop" primary="true"></bean>
+	<bean id="desktop" class="com.practice.SpringDemo.Laptop"></bean>
+
 </beans>

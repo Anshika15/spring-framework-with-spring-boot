@@ -2,7 +2,7 @@ package com.practice.SpringDemo;
 
 public class Alien {
 	private int age;
-	private Laptop laptop;
+	private Computer com;
 	
 	public Alien(int age) {
 		this.age = age;
@@ -10,16 +10,18 @@ public class Alien {
 	
 	public void code() {
 		System.out.println("coding");
-		laptop.compile();
+		com.compile();
 	}
 	
-	public Laptop getLaptop() {
-		return laptop;
-	}
-	public void setLaptop(Laptop laptop) {
-		this.laptop = laptop;
-	}
 	
+	public Computer getCom() {
+		return com;
+	}
+
+	public void setCom(Computer com) {
+		this.com = com;
+	}
+
 	public int getAge() {
 		return age;
 	}

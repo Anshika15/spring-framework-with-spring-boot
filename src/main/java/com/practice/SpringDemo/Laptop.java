@@ -1,7 +1,7 @@
 package com.practice.SpringDemo;
 
-public class Laptop {
+public class Laptop implements Computer{
 	public void compile() {
-		System.out.println("code compiled");
+		System.out.println("code compiled in Laptop");
 	}
 }
